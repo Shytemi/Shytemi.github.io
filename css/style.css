@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@500&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --main-color: #b114e0;
+}
+.navbar ul li a:hover {
+    color: var(--main-color) !important;
+}
+.act {
+    border-bottom: 2px solid var(--main-color);
+}
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),    
+    url(../img/landing-img.\ jpg.webp);
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+}
+.icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.col-img {
+    background-image: url(../img/about.png.webp);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.featured {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;   
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.featured img {
+    transition: all 0.4s ease;
+}
+.featured:hover .overlay {
+    opacity: 1;
+}
+.featured:hover img {
+    transform: scale(1.1);
+}
+.work .col-img {
+    background-image: url(../img/xwork.webp);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.testimonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/xbanner.webp);
+    height: 90vh;
+}
+.testimony-author {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.testimony-author img {
+    width: 75px !important;
+    margin: auto;
+}

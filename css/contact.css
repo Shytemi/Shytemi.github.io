@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --main-color: #b114e0;
+}
+.navbar ul li a:hover {
+    color: var(--main-color) !important;
+}
+.act {
+    border-bottom: 2px solid var(--main-color);
+}
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),    
+    url(../img/contact\ 1.webp);
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+}
